@@ -13,11 +13,14 @@ gameServer.use(express.json());
 
 const server = http.createServer(gameServer);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: [
+      "http://localhost:5173",
+      "https://police-thief-roleplay-frontend-amegh-ms-projects.vercel.app/",
+    ],
   },
 });
 
