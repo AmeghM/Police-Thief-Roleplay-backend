@@ -19,7 +19,7 @@ const io = new Server(server, {
   cors: {
     origin: [
       "http://localhost:5173",
-      "https://police-thief-roleplay-frontend-amegh-ms-projects.vercel.app/",
+      "https://police-thief-roleplay-frontend-amegh-ms-projects.vercel.app",
     ],
   },
 });
